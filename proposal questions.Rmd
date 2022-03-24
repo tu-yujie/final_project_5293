@@ -1,0 +1,19 @@
+---
+title: "proposal"
+author: "Yujie Tu,Yuchen Meng"
+date: "3/7/2022"
+output: html_document
+---
+
+Our interested questions:
+1.	When user push a commitment, what are the characteristics of the commits’ messages?
+When user push a commitment, they are required to write a commit message. What is the distribution of the length of that message? Which kind of information do users put in their commit messages, which kinds of words do they use in their commit messages? And we can also do some analysis for the issue comments and pull reques comments.
+
+2.	When users submit an issue, or a pull request, what are the characteristics of the user's relationship to the project?
+Since a user can take several role in terms of a project, including owner, contributor, member, and etc., then what is the distribution of the role of those users who submit an issue or a pull request? 
+
+3.	When user push a commitment to the github, what kind of changes did they make to the file?
+In the github's commit data, we have some information regarding the number of changes (including addition, deletion) user made to their file. So we would like to see what is the distribution of such modifications. Do users usually only do small numbers modification? Or do they tend to modify the file massively before they push a commit.
+
+Data website link: https://ghtorrent.org/
+Direct link for downloading data: http://ghtorrent-downloads.ewi.tudelft.nl/mongo-daily/mongo-dump-2019-06-30.tar.gz
