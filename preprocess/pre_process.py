@@ -1,4 +1,4 @@
-# please install pymango and uninstall bson
+# if you already install bson, please  uninstall bson install pymango
 import bson # this package is from pymango
 import os
 from utility import download_file, extract_data
