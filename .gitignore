@@ -3,4 +3,5 @@
 *.bson
 *.tar.gz
 *.json
+*.pyc
 .Rproj.user
