@@ -55,11 +55,11 @@ def download_file(url):
     return file_name
 
 def extract_data(raw_data_path, file_name):
+    prefix_path = "dump/github/"
+    extracted_files = ["issue_comments.bson", "pull_request_comments.bson", "commits.bson"]
     file =  tarfile.open(file_name)
-    print("extracting issue_comments...")
-    file.extract("dump/github/issue_comments.bson", raw_data_path)
-    print("extracting pull_request_comments...")
-    file.extract("dump/github/pull_request_comments.bson", raw_data_path)
-    print("extracting commits...")
-    file.extract("dump/github/commits.bson", raw_data_path)
-    print("successfully extracting all needed data to directory raw_data")
+    for file in extracted_files:
+        if os.path.exists(os.path.join(raw_data_path, prefix_path, file)):
+            continue
+        print("extracting {}...".format(file))
+        file.extract(os.path.join(prefix_path, file), raw_data_path)
