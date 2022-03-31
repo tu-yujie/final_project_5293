@@ -3,3 +3,4 @@
 *.bson
 *.tar.gz
 *.json
+.Rproj.user
